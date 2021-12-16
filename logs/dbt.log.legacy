@@ -413,3 +413,403 @@ dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'Da
 2021-12-16 09:12:29.010323 (Thread-33): handling status request
 2021-12-16 09:12:29.012474 (Thread-33): 09:12:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c5b38b0>]}
 2021-12-16 09:12:29.013272 (Thread-33): sending response (<Response 15565 bytes [200 OK]>) to 10.0.18.143
+2021-12-16 09:12:32.180981 (Thread-34): 09:12:32  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2021-12-16 09:12:32.181173 (Thread-34): 09:12:32  Partial parsing enabled, no changes found, skipping parsing
+2021-12-16 09:12:32.186142 (Thread-34): 09:12:32  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c450400>]}
+2021-12-16 09:12:34.636054 (Thread-35): handling status request
+2021-12-16 09:12:34.636392 (Thread-35): 09:12:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c481130>]}
+2021-12-16 09:12:34.636856 (Thread-35): sending response (<Response 1241 bytes [200 OK]>) to 10.0.41.139
+2021-12-16 09:12:34.687668 (Thread-36): handling status request
+2021-12-16 09:12:34.687983 (Thread-36): 09:12:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c448df0>]}
+2021-12-16 09:12:34.688431 (Thread-36): sending response (<Response 1241 bytes [200 OK]>) to 10.0.37.206
+2021-12-16 09:16:47.205326 (Thread-37): handling status request
+2021-12-16 09:16:47.206961 (Thread-37): 09:16:47  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c448b20>]}
+2021-12-16 09:16:47.207433 (Thread-37): sending response (<Response 1241 bytes [200 OK]>) to 10.0.10.36
+2021-12-16 09:16:47.740368 (Thread-38): handling run_sql request
+2021-12-16 09:16:47.740670 (Thread-38): 09:16:47  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c448580>]}
+2021-12-16 09:16:49.918144 (Thread-38): sending response (<Response 138 bytes [200 OK]>) to 10.0.6.185
+2021-12-16 09:16:49.957486 (MainThread): 09:16:49  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bdd15fcb-c5ae-4206-b370-8ebd71e76752', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f46a30ca7c0>]}
+2021-12-16 09:16:49.958309 (MainThread): 09:16:49  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:16:49.959356 (Thread-1): 09:16:49  Acquiring new snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:16:49.959556 (Thread-1): 09:16:49  Began compiling node rpc.my_new_project.request
+2021-12-16 09:16:49.959712 (Thread-1): 09:16:49  Compiling rpc.my_new_project.request
+2021-12-16 09:16:49.961491 (Thread-1): 09:16:49  finished collecting timing info
+2021-12-16 09:16:49.961669 (Thread-1): 09:16:49  Began executing node rpc.my_new_project.request
+2021-12-16 09:16:49.962405 (Thread-1): 09:16:49  Using snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:16:49.962543 (Thread-1): 09:16:49  On rpc.my_new_project.request: limit 500
+/* limit added automatically by dbt cloud */
+2021-12-16 09:16:49.962658 (Thread-1): 09:16:49  Opening a new connection, currently in state init
+2021-12-16 09:16:50.436252 (Thread-1): 09:16:50  Snowflake adapter: Snowflake query id: 01a0fbcc-0000-6049-0000-337100ea4b92
+2021-12-16 09:16:50.436464 (Thread-1): 09:16:50  Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'limit'.
+2021-12-16 09:16:50.436631 (Thread-1): 09:16:50  finished collecting timing info
+2021-12-16 09:16:50.436819 (Thread-1): 09:16:50  On rpc.my_new_project.request: Close
+2021-12-16 09:16:50.530759 (Thread-1): Got an exception: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'limit'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 204, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 781, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 269, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 324, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 203, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'limit'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 431, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 221, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'limit'.
+2021-12-16 09:16:50.531799 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'limit'.", 'raw_sql': '\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': '\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'limit'.", 'raw_sql': '\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': '\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-12-16 09:16:50.579969 (Thread-39): handling poll request
+2021-12-16 09:16:50.580359 (Thread-39): 09:16:50  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c450520>]}
+2021-12-16 09:16:50.605444 (Thread-39): sending response (<Response 9794 bytes [200 OK]>) to 10.0.9.255
+2021-12-16 09:16:52.542700 (Thread-40): handling poll request
+2021-12-16 09:16:52.543053 (Thread-40): 09:16:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c450cd0>]}
+2021-12-16 09:16:52.543622 (Thread-40): sending response (<Response 9843 bytes [200 OK]>) to 10.0.26.68
+2021-12-16 09:16:52.679746 (Thread-41): handling status request
+2021-12-16 09:16:52.680061 (Thread-41): 09:16:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c450b20>]}
+2021-12-16 09:16:52.680519 (Thread-41): sending response (<Response 1219 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:52.686319 (Thread-42): handling status request
+2021-12-16 09:16:52.686547 (Thread-42): 09:16:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181b2280>]}
+2021-12-16 09:16:52.686928 (Thread-42): sending response (<Response 1219 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:52.687855 (Thread-43): handling list request
+2021-12-16 09:16:52.688119 (Thread-43): 09:16:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c481400>]}
+2021-12-16 09:16:52.750278 (Thread-44): sending response (<Response 214 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:53.118847 (Thread-45): handling status request
+2021-12-16 09:16:53.119174 (Thread-45): 09:16:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4509a0>]}
+2021-12-16 09:16:53.119626 (Thread-45): sending response (<Response 1219 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:53.125136 (Thread-46): handling list request
+2021-12-16 09:16:53.125348 (Thread-46): 09:16:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181b2d30>]}
+2021-12-16 09:16:53.157413 (Thread-46): 09:16:53  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181c3c40>]}
+2021-12-16 09:16:53.157694 (Thread-46): 09:16:53  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:16:53.158455 (Thread-46): 09:16:53  The selection criterion '1639645680056/__unsaved/Statement' does not match any nodes
+2021-12-16 09:16:53.158621 (Thread-46): 09:16:53  The selection criterion '1.sql' does not match any nodes
+2021-12-16 09:16:53.158708 (Thread-46): 09:16:53  No nodes selected!
+2021-12-16 09:16:53.160235 (Thread-46): sending response (<Response 2336 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:55.905325 (Thread-47): handling status request
+2021-12-16 09:16:55.905641 (Thread-47): 09:16:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181d8700>]}
+2021-12-16 09:16:55.906103 (Thread-47): sending response (<Response 1219 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:55.909048 (Thread-48): handling status request
+2021-12-16 09:16:55.909259 (Thread-48): 09:16:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181d8ca0>]}
+2021-12-16 09:16:55.909617 (Thread-48): sending response (<Response 1219 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:55.912518 (Thread-49): handling list request
+2021-12-16 09:16:55.912717 (Thread-49): 09:16:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181d8f10>]}
+2021-12-16 09:16:55.945424 (Thread-50): sending response (<Response 214 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:56.341230 (Thread-51): handling status request
+2021-12-16 09:16:56.341549 (Thread-51): 09:16:56  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181d8370>]}
+2021-12-16 09:16:56.341988 (Thread-51): sending response (<Response 1219 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:56.347652 (Thread-52): handling list request
+2021-12-16 09:16:56.347866 (Thread-52): 09:16:56  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181d8fd0>]}
+2021-12-16 09:16:56.375037 (Thread-52): 09:16:56  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181e6af0>]}
+2021-12-16 09:16:56.375292 (Thread-52): 09:16:56  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:16:56.376017 (Thread-52): 09:16:56  The selection criterion '1639645680056/__unsaved/Statement' does not match any nodes
+2021-12-16 09:16:56.376184 (Thread-52): 09:16:56  The selection criterion '1.sql' does not match any nodes
+2021-12-16 09:16:56.376273 (Thread-52): 09:16:56  No nodes selected!
+2021-12-16 09:16:56.377630 (Thread-52): sending response (<Response 2336 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:57.411060 (Thread-53): handling status request
+2021-12-16 09:16:57.411414 (Thread-53): 09:16:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181ed310>]}
+2021-12-16 09:16:57.411892 (Thread-53): sending response (<Response 1219 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:16:57.417449 (Thread-54): handling list request
+2021-12-16 09:16:57.417690 (Thread-54): 09:16:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181ed8b0>]}
+2021-12-16 09:16:57.443980 (Thread-54): 09:16:57  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181edd60>]}
+2021-12-16 09:16:57.444240 (Thread-54): 09:16:57  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:16:57.445000 (Thread-54): 09:16:57  The selection criterion '+1639645680056/__unsaved/Statement' does not match any nodes
+2021-12-16 09:16:57.445168 (Thread-54): 09:16:57  The selection criterion '1.sql+' does not match any nodes
+2021-12-16 09:16:57.445256 (Thread-54): 09:16:57  No nodes selected!
+2021-12-16 09:16:57.446540 (Thread-54): sending response (<Response 2338 bytes [200 OK]>) to 10.0.4.11
+2021-12-16 09:17:03.736626 (Thread-55): handling status request
+2021-12-16 09:17:03.736960 (Thread-55): 09:17:03  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4918171310>]}
+2021-12-16 09:17:03.737431 (Thread-55): sending response (<Response 1241 bytes [200 OK]>) to 10.0.26.68
+2021-12-16 09:17:04.355359 (Thread-56): handling run_sql request
+2021-12-16 09:17:04.355698 (Thread-56): 09:17:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181719d0>]}
+2021-12-16 09:17:06.521964 (Thread-56): sending response (<Response 138 bytes [200 OK]>) to 10.0.34.87
+2021-12-16 09:17:06.544974 (MainThread): 09:17:06  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '55ee7d59-9a68-4169-a5e9-f6e6978c1073', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd22275730>]}
+2021-12-16 09:17:06.545526 (MainThread): 09:17:06  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:17:06.546210 (Thread-1): 09:17:06  Acquiring new snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:17:06.546340 (Thread-1): 09:17:06  Began compiling node rpc.my_new_project.request
+2021-12-16 09:17:06.546433 (Thread-1): 09:17:06  Compiling rpc.my_new_project.request
+2021-12-16 09:17:06.547538 (Thread-1): 09:17:06  finished collecting timing info
+2021-12-16 09:17:06.547665 (Thread-1): 09:17:06  Began executing node rpc.my_new_project.request
+2021-12-16 09:17:06.548160 (Thread-1): 09:17:06  Using snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:17:06.548255 (Thread-1): 09:17:06  On rpc.my_new_project.request: limit 500
+/* limit added automatically by dbt cloud */
+2021-12-16 09:17:06.548337 (Thread-1): 09:17:06  Opening a new connection, currently in state init
+2021-12-16 09:17:07.020790 (Thread-1): 09:17:07  Snowflake adapter: Snowflake query id: 01a0fbcd-0000-6046-0000-337100ea5b0a
+2021-12-16 09:17:07.021014 (Thread-1): 09:17:07  Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'limit'.
+2021-12-16 09:17:07.021189 (Thread-1): 09:17:07  finished collecting timing info
+2021-12-16 09:17:07.021383 (Thread-1): 09:17:07  On rpc.my_new_project.request: Close
+2021-12-16 09:17:07.084247 (Thread-57): handling poll request
+2021-12-16 09:17:07.084655 (Thread-57): 09:17:07  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491817cbe0>]}
+2021-12-16 09:17:07.085513 (Thread-57): sending response (<Response 5106 bytes [200 OK]>) to 10.0.38.18
+2021-12-16 09:17:07.120439 (Thread-1): Got an exception: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'limit'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 204, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 781, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 269, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 324, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 203, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'limit'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 431, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 221, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'limit'.
+2021-12-16 09:17:07.121445 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'limit'.", 'raw_sql': '\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': '\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'limit'.", 'raw_sql': '\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': '\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-12-16 09:17:08.692576 (Thread-58): handling poll request
+2021-12-16 09:17:08.692918 (Thread-58): 09:17:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491817cd60>]}
+2021-12-16 09:17:08.693491 (Thread-58): sending response (<Response 9843 bytes [200 OK]>) to 10.0.34.87
+2021-12-16 09:17:42.558726 (Thread-59): handling status request
+2021-12-16 09:17:42.559082 (Thread-59): 09:17:42  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181863d0>]}
+2021-12-16 09:17:42.559584 (Thread-59): sending response (<Response 1241 bytes [200 OK]>) to 10.0.38.18
+2021-12-16 09:17:43.060263 (Thread-60): handling run_sql request
+2021-12-16 09:17:43.060580 (Thread-60): 09:17:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181866d0>]}
+2021-12-16 09:17:45.190732 (Thread-60): sending response (<Response 138 bytes [200 OK]>) to 10.0.10.36
+2021-12-16 09:17:45.214355 (MainThread): 09:17:45  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b143a105-8060-42ea-82d9-7142099f3d76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8f63ccb20>]}
+2021-12-16 09:17:45.214985 (MainThread): 09:17:45  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:17:45.215579 (Thread-1): 09:17:45  Acquiring new snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:17:45.215709 (Thread-1): 09:17:45  Began compiling node rpc.my_new_project.request
+2021-12-16 09:17:45.215801 (Thread-1): 09:17:45  Compiling rpc.my_new_project.request
+2021-12-16 09:17:45.217623 (Thread-1): 09:17:45  finished collecting timing info
+2021-12-16 09:17:45.217751 (Thread-1): 09:17:45  Began executing node rpc.my_new_project.request
+2021-12-16 09:17:45.218426 (Thread-1): 09:17:45  Using snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:17:45.218518 (Thread-1): 09:17:45  On rpc.my_new_project.request: -- Use the `ref` function to select from other models
+
+select *
+from INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.my_first_dbt_model
+where id = 1
+limit 500
+/* limit added automatically by dbt cloud */
+2021-12-16 09:17:45.218599 (Thread-1): 09:17:45  Opening a new connection, currently in state init
+2021-12-16 09:17:45.689162 (Thread-61): handling poll request
+2021-12-16 09:17:45.689569 (Thread-61): 09:17:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491818d760>]}
+2021-12-16 09:17:45.690371 (Thread-61): sending response (<Response 3863 bytes [200 OK]>) to 10.0.11.4
+2021-12-16 09:17:45.724010 (Thread-1): 09:17:45  Snowflake adapter: Snowflake query id: 01a0fbcd-0000-6046-0000-337100ea5b0e
+2021-12-16 09:17:45.724233 (Thread-1): 09:17:45  Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+2021-12-16 09:17:45.724402 (Thread-1): 09:17:45  finished collecting timing info
+2021-12-16 09:17:45.724587 (Thread-1): 09:17:45  On rpc.my_new_project.request: Close
+2021-12-16 09:17:45.820973 (Thread-1): Got an exception: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 204, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 781, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 269, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 324, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 203, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 431, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 221, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002003 (42S02): SQL compilation error:
+  Object 'INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.MY_FIRST_DBT_MODEL' does not exist or not authorized.
+2021-12-16 09:17:45.821941 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.MY_FIRST_DBT_MODEL' does not exist or not authorized.", 'raw_sql': "-- Use the `ref` function to select from other models\n\nselect *\nfrom {{ ref('my_first_dbt_model') }}\nwhere id = 1\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': '-- Use the `ref` function to select from other models\n\nselect *\nfrom INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.my_first_dbt_model\nwhere id = 1\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (42S02): SQL compilation error:\n  Object 'INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.MY_FIRST_DBT_MODEL' does not exist or not authorized.", 'raw_sql': "-- Use the `ref` function to select from other models\n\nselect *\nfrom {{ ref('my_first_dbt_model') }}\nwhere id = 1\nlimit 500\n/* limit added automatically by dbt cloud */", 'compiled_sql': '-- Use the `ref` function to select from other models\n\nselect *\nfrom INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS.my_first_dbt_model\nwhere id = 1\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-12-16 09:17:47.237847 (Thread-62): handling poll request
+2021-12-16 09:17:47.238193 (Thread-62): 09:17:47  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491818db80>]}
+2021-12-16 09:17:47.262045 (Thread-62): sending response (<Response 11105 bytes [200 OK]>) to 10.0.3.76
+2021-12-16 09:21:46.712777 (Thread-63): handling status request
+2021-12-16 09:21:46.713106 (Thread-63): 09:21:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491818dfa0>]}
+2021-12-16 09:21:46.713609 (Thread-63): sending response (<Response 1241 bytes [200 OK]>) to 10.0.11.4
+2021-12-16 09:21:46.776650 (Thread-64): handling status request
+2021-12-16 09:21:46.776968 (Thread-64): 09:21:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491817c760>]}
+2021-12-16 09:21:46.777418 (Thread-64): sending response (<Response 1241 bytes [200 OK]>) to 10.0.42.98
+2021-12-16 09:21:46.779476 (Thread-65): handling ps request
+2021-12-16 09:21:46.779683 (Thread-65): 09:21:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181712e0>]}
+2021-12-16 09:21:46.780427 (Thread-65): sending response (<Response 5035 bytes [200 OK]>) to 10.0.3.76
+2021-12-16 09:21:46.797810 (Thread-66): handling status request
+2021-12-16 09:21:46.798032 (Thread-66): 09:21:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181714f0>]}
+2021-12-16 09:21:46.798383 (Thread-66): sending response (<Response 1241 bytes [200 OK]>) to 10.0.11.4
+2021-12-16 09:21:48.258767 (Thread-67): handling poll request
+2021-12-16 09:21:48.259123 (Thread-67): 09:21:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491819b520>]}
+2021-12-16 09:21:48.260889 (Thread-67): sending response (<Response 50196 bytes [200 OK]>) to 10.0.9.255
+2021-12-16 09:21:49.338779 (Thread-68): handling status request
+2021-12-16 09:21:49.339126 (Thread-68): 09:21:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491819b370>]}
+2021-12-16 09:21:49.339580 (Thread-68): sending response (<Response 1241 bytes [200 OK]>) to 10.0.37.206
+2021-12-16 09:21:49.350307 (Thread-69): handling status request
+2021-12-16 09:21:49.350552 (Thread-69): 09:21:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491819b5b0>]}
+2021-12-16 09:21:49.350980 (Thread-69): sending response (<Response 1241 bytes [200 OK]>) to 10.0.37.206
+2021-12-16 09:21:58.071361 (Thread-70): handling status request
+2021-12-16 09:21:58.071748 (Thread-70): 09:21:58  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4812e0>]}
+2021-12-16 09:21:58.072211 (Thread-70): sending response (<Response 1241 bytes [200 OK]>) to 10.0.41.139
+2021-12-16 09:21:58.581664 (Thread-71): handling run_sql request
+2021-12-16 09:21:58.581985 (Thread-71): 09:21:58  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491819bdc0>]}
+2021-12-16 09:22:00.715990 (Thread-71): sending response (<Response 138 bytes [200 OK]>) to 10.0.24.201
+2021-12-16 09:22:00.740074 (MainThread): 09:22:00  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '66119fc5-bdf0-4f28-8260-2ec3c3c208a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc52810acd0>]}
+2021-12-16 09:22:00.740739 (MainThread): 09:22:00  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:22:00.741335 (Thread-1): 09:22:00  Acquiring new snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:22:00.741468 (Thread-1): 09:22:00  Began compiling node rpc.my_new_project.request
+2021-12-16 09:22:00.741560 (Thread-1): 09:22:00  Compiling rpc.my_new_project.request
+2021-12-16 09:22:00.744126 (Thread-1): 09:22:00  finished collecting timing info
+2021-12-16 09:22:00.744256 (Thread-1): 09:22:00  Began executing node rpc.my_new_project.request
+2021-12-16 09:22:00.745104 (Thread-1): 09:22:00  Using snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:22:00.745197 (Thread-1): 09:22:00  On rpc.my_new_project.request: select 0 as number  union all 
+
+
+
+  select 1 as number  union all 
+
+
+
+  select 2 as number  union all 
+
+
+
+  select 3 as number  union all 
+
+
+
+  select 4 as number  union all 
+
+
+
+  select 5 as number  union all 
+
+
+
+  select 6 as number  union all 
+
+
+
+  select 7 as number  union all 
+
+
+
+  select 8 as number  union all 
+
+
+
+  select 9 as number 
+
+
+limit 500
+/* limit added automatically by dbt cloud */
+2021-12-16 09:22:00.745278 (Thread-1): 09:22:00  Opening a new connection, currently in state init
+2021-12-16 09:22:01.474601 (Thread-72): handling poll request
+2021-12-16 09:22:01.475059 (Thread-72): 09:22:01  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181a5d30>]}
+2021-12-16 09:22:01.475894 (Thread-72): sending response (<Response 4105 bytes [200 OK]>) to 10.0.44.37
+2021-12-16 09:22:01.666721 (Thread-1): 09:22:01  SQL status: SUCCESS 10 in 0.92 seconds
+2021-12-16 09:22:01.668714 (Thread-1): 09:22:01  finished collecting timing info
+2021-12-16 09:22:01.668930 (Thread-1): 09:22:01  On rpc.my_new_project.request: Close
+2021-12-16 09:22:03.056913 (Thread-73): handling poll request
+2021-12-16 09:22:03.057243 (Thread-73): 09:22:03  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181a43a0>]}
+2021-12-16 09:22:03.058105 (Thread-73): sending response (<Response 4389 bytes [200 OK]>) to 10.0.34.87
+2021-12-16 09:26:20.438722 (Thread-74): handling status request
+2021-12-16 09:26:20.440330 (Thread-74): 09:26:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49181a4850>]}
+2021-12-16 09:26:20.440826 (Thread-74): sending response (<Response 1241 bytes [200 OK]>) to 10.0.18.143

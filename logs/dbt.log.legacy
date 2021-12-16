@@ -1,0 +1,415 @@
+2021-12-16 09:08:54.857541 (MainThread): Running with dbt=1.0.0
+2021-12-16 09:08:55.078153 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2021-12-16 09:08:55.093594 (MainThread): Tracking: tracking
+2021-12-16 09:08:55.093948 (MainThread): 09:08:55  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49393cc9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49380a7430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49380c4130>]}
+2021-12-16 09:08:55.094292 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=24
+2021-12-16 09:08:55.094616 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2021-12-16 09:08:55.094740 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-12-16 09:08:55.098075 (Thread-12): 09:08:55  Partial parse save file not found. Starting full parse.
+2021-12-16 09:08:55.098339 (Thread-12): 09:08:55  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f49380b9a30>]}
+2021-12-16 09:08:55.128525 (Thread-12): 09:08:55  Parsing macros/catalog.sql
+2021-12-16 09:08:55.131035 (Thread-12): 09:08:55  Parsing macros/adapters.sql
+2021-12-16 09:08:55.169542 (Thread-12): 09:08:55  Parsing macros/materializations/merge.sql
+2021-12-16 09:08:55.173410 (Thread-12): 09:08:55  Parsing macros/materializations/table.sql
+2021-12-16 09:08:55.176538 (Thread-12): 09:08:55  Parsing macros/materializations/seed.sql
+2021-12-16 09:08:55.181598 (Thread-12): 09:08:55  Parsing macros/materializations/view.sql
+2021-12-16 09:08:55.182967 (Thread-12): 09:08:55  Parsing macros/materializations/snapshot.sql
+2021-12-16 09:08:55.183894 (Thread-12): 09:08:55  Parsing macros/materializations/incremental.sql
+2021-12-16 09:08:55.192413 (Thread-12): 09:08:55  Parsing macros/get_custom_name/get_custom_alias.sql
+2021-12-16 09:08:55.193913 (Thread-12): 09:08:55  Parsing macros/get_custom_name/get_custom_database.sql
+2021-12-16 09:08:55.195562 (Thread-12): 09:08:55  Parsing macros/get_custom_name/get_custom_schema.sql
+2021-12-16 09:08:55.198898 (Thread-12): 09:08:55  Parsing macros/generic_test_sql/accepted_values.sql
+2021-12-16 09:08:55.200253 (Thread-12): 09:08:55  Parsing macros/generic_test_sql/not_null.sql
+2021-12-16 09:08:55.200795 (Thread-12): 09:08:55  Parsing macros/generic_test_sql/relationships.sql
+2021-12-16 09:08:55.201621 (Thread-12): 09:08:55  Parsing macros/generic_test_sql/unique.sql
+2021-12-16 09:08:55.202560 (Thread-12): 09:08:55  Parsing macros/materializations/configs.sql
+2021-12-16 09:08:55.206108 (Thread-12): 09:08:55  Parsing macros/materializations/hooks.sql
+2021-12-16 09:08:55.211104 (Thread-12): 09:08:55  Parsing macros/materializations/snapshots/strategies.sql
+2021-12-16 09:08:55.217159 (Thread-13): handling status request
+2021-12-16 09:08:55.228664 (Thread-12): 09:08:55  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2021-12-16 09:08:55.229004 (Thread-13): 09:08:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4938089c70>]}
+2021-12-16 09:08:55.230633 (Thread-12): 09:08:55  Parsing macros/materializations/snapshots/snapshot.sql
+2021-12-16 09:08:55.231285 (Thread-13): sending response (<Response 185 bytes [200 OK]>) to 10.0.11.4
+2021-12-16 09:08:55.242456 (Thread-12): 09:08:55  Parsing macros/materializations/snapshots/helpers.sql
+2021-12-16 09:08:55.254065 (Thread-12): 09:08:55  Parsing macros/materializations/seeds/seed.sql
+2021-12-16 09:08:55.260237 (Thread-12): 09:08:55  Parsing macros/materializations/seeds/helpers.sql
+2021-12-16 09:08:55.275911 (Thread-12): 09:08:55  Parsing macros/materializations/models/view/create_view_as.sql
+2021-12-16 09:08:55.278214 (Thread-12): 09:08:55  Parsing macros/materializations/models/view/view.sql
+2021-12-16 09:08:55.285026 (Thread-12): 09:08:55  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2021-12-16 09:08:55.287660 (Thread-12): 09:08:55  Parsing macros/materializations/models/view/helpers.sql
+2021-12-16 09:08:55.288926 (Thread-12): 09:08:55  Parsing macros/materializations/models/table/table.sql
+2021-12-16 09:08:55.295801 (Thread-12): 09:08:55  Parsing macros/materializations/models/table/create_table_as.sql
+2021-12-16 09:08:55.298539 (Thread-12): 09:08:55  Parsing macros/materializations/models/incremental/merge.sql
+2021-12-16 09:08:55.309313 (Thread-12): 09:08:55  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2021-12-16 09:08:55.324329 (Thread-12): 09:08:55  Parsing macros/materializations/models/incremental/column_helpers.sql
+2021-12-16 09:08:55.328624 (Thread-12): 09:08:55  Parsing macros/materializations/models/incremental/incremental.sql
+2021-12-16 09:08:55.338229 (Thread-12): 09:08:55  Parsing macros/materializations/models/incremental/is_incremental.sql
+2021-12-16 09:08:55.339767 (Thread-12): 09:08:55  Parsing macros/materializations/tests/test.sql
+2021-12-16 09:08:55.344024 (Thread-12): 09:08:55  Parsing macros/materializations/tests/where_subquery.sql
+2021-12-16 09:08:55.345772 (Thread-12): 09:08:55  Parsing macros/materializations/tests/helpers.sql
+2021-12-16 09:08:55.347504 (Thread-12): 09:08:55  Parsing macros/etc/statement.sql
+2021-12-16 09:08:55.351770 (Thread-12): 09:08:55  Parsing macros/etc/datetime.sql
+2021-12-16 09:08:55.360165 (Thread-12): 09:08:55  Parsing macros/adapters/indexes.sql
+2021-12-16 09:08:55.362725 (Thread-12): 09:08:55  Parsing macros/adapters/persist_docs.sql
+2021-12-16 09:08:55.367029 (Thread-12): 09:08:55  Parsing macros/adapters/freshness.sql
+2021-12-16 09:08:55.369834 (Thread-12): 09:08:55  Parsing macros/adapters/relation.sql
+2021-12-16 09:08:55.379220 (Thread-12): 09:08:55  Parsing macros/adapters/metadata.sql
+2021-12-16 09:08:55.386236 (Thread-12): 09:08:55  Parsing macros/adapters/columns.sql
+2021-12-16 09:08:55.396116 (Thread-12): 09:08:55  Parsing macros/adapters/schema.sql
+2021-12-16 09:08:55.398357 (Thread-12): 09:08:55  Parsing tests/generic/builtin.sql
+2021-12-16 09:08:55.398938 (Thread-14): handling status request
+2021-12-16 09:08:55.419592 (Thread-14): 09:08:55  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c5b37f0>]}
+2021-12-16 09:08:55.425171 (Thread-14): sending response (<Response 185 bytes [200 OK]>) to 10.0.19.209
+2021-12-16 09:08:55.593030 (Thread-12): 09:08:55  1699: static parser successfully parsed example/my_second_dbt_model.sql
+2021-12-16 09:08:55.604995 (Thread-12): 09:08:55  1699: static parser successfully parsed example/my_first_dbt_model.sql
+2021-12-16 09:08:55.683504 (Thread-12): 09:08:55  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c52b9a0>]}
+2021-12-16 09:08:57.833873 (Thread-15): handling status request
+2021-12-16 09:08:57.834729 (Thread-16): handling status request
+2021-12-16 09:08:57.835043 (Thread-15): 09:08:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c5b1430>]}
+2021-12-16 09:08:57.835307 (Thread-16): 09:08:57  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c52bf40>]}
+2021-12-16 09:08:57.836219 (Thread-15): sending response (<Response 15565 bytes [200 OK]>) to 10.0.41.139
+2021-12-16 09:08:57.837007 (Thread-16): sending response (<Response 15565 bytes [200 OK]>) to 10.0.44.37
+2021-12-16 09:10:17.768250 (Thread-17): handling status request
+2021-12-16 09:10:17.769915 (Thread-17): 09:10:17  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c530850>]}
+2021-12-16 09:10:17.770744 (Thread-17): sending response (<Response 15565 bytes [200 OK]>) to 10.0.11.17
+2021-12-16 09:10:18.292848 (Thread-18): handling run_sql request
+2021-12-16 09:10:18.293178 (Thread-18): 09:10:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c52bbe0>]}
+2021-12-16 09:10:20.492388 (Thread-18): sending response (<Response 138 bytes [200 OK]>) to 10.0.42.98
+2021-12-16 09:10:20.520142 (MainThread): 09:10:20  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '71a74425-aff5-4a0f-9278-dd4dbaaf24dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9723daa700>]}
+2021-12-16 09:10:20.520689 (MainThread): 09:10:20  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:10:20.521357 (Thread-1): 09:10:20  Acquiring new snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:10:20.521485 (Thread-1): 09:10:20  Began compiling node rpc.my_new_project.request
+2021-12-16 09:10:20.521583 (Thread-1): 09:10:20  Compiling rpc.my_new_project.request
+2021-12-16 09:10:20.523520 (Thread-1): 09:10:20  finished collecting timing info
+2021-12-16 09:10:20.523647 (Thread-1): 09:10:20  Began executing node rpc.my_new_project.request
+2021-12-16 09:10:20.524439 (Thread-1): 09:10:20  Using snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:10:20.524531 (Thread-1): 09:10:20  On rpc.my_new_project.request: /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+limit 500
+/* limit added automatically by dbt cloud */
+2021-12-16 09:10:20.524609 (Thread-1): 09:10:20  Opening a new connection, currently in state init
+2021-12-16 09:10:20.998598 (Thread-19): handling poll request
+2021-12-16 09:10:20.999054 (Thread-19): 09:10:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4ce3a0>]}
+2021-12-16 09:10:20.999928 (Thread-19): sending response (<Response 4188 bytes [200 OK]>) to 10.0.18.143
+2021-12-16 09:10:21.062303 (Thread-1): 09:10:21  SQL status: SUCCESS 2 in 0.54 seconds
+2021-12-16 09:10:21.064274 (Thread-1): 09:10:21  finished collecting timing info
+2021-12-16 09:10:21.064489 (Thread-1): 09:10:21  On rpc.my_new_project.request: Close
+2021-12-16 09:10:25.505547 (Thread-20): handling poll request
+2021-12-16 09:10:25.505882 (Thread-20): 09:10:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4cea00>]}
+2021-12-16 09:10:25.506842 (Thread-20): sending response (<Response 5284 bytes [200 OK]>) to 10.0.3.76
+2021-12-16 09:11:04.252215 (Thread-21): handling status request
+2021-12-16 09:11:04.253848 (Thread-21): 09:11:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4cebb0>]}
+2021-12-16 09:11:04.254778 (Thread-21): sending response (<Response 15565 bytes [200 OK]>) to 10.0.3.76
+2021-12-16 09:11:05.058579 (Thread-22): handling run_sql request
+2021-12-16 09:11:05.058940 (Thread-22): 09:11:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4cefa0>]}
+2021-12-16 09:11:07.245312 (Thread-22): sending response (<Response 138 bytes [200 OK]>) to 10.0.41.139
+2021-12-16 09:11:07.268806 (MainThread): 09:11:07  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bce0e7e5-7905-4d64-9d88-7dc8ef138ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fdb0cf730>]}
+2021-12-16 09:11:07.269368 (MainThread): 09:11:07  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:11:07.270075 (Thread-1): 09:11:07  Acquiring new snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:11:07.270213 (Thread-1): 09:11:07  Began compiling node rpc.my_new_project.request
+2021-12-16 09:11:07.270308 (Thread-1): 09:11:07  Compiling rpc.my_new_project.request
+2021-12-16 09:11:07.271430 (Thread-1): 09:11:07  finished collecting timing info
+2021-12-16 09:11:07.271566 (Thread-1): 09:11:07  Began executing node rpc.my_new_project.request
+2021-12-16 09:11:07.272092 (Thread-1): 09:11:07  Using snowflake connection "rpc.my_new_project.request"
+2021-12-16 09:11:07.272184 (Thread-1): 09:11:07  On rpc.my_new_project.request: dbt docs generate
+limit 500
+/* limit added automatically by dbt cloud */
+2021-12-16 09:11:07.272265 (Thread-1): 09:11:07  Opening a new connection, currently in state init
+2021-12-16 09:11:07.734834 (Thread-1): 09:11:07  Snowflake adapter: Snowflake query id: 01a0fbc7-0000-6048-0000-337100ea3be2
+2021-12-16 09:11:07.735058 (Thread-1): 09:11:07  Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'dbt'.
+2021-12-16 09:11:07.735240 (Thread-1): 09:11:07  finished collecting timing info
+2021-12-16 09:11:07.735435 (Thread-1): 09:11:07  On rpc.my_new_project.request: Close
+2021-12-16 09:11:07.831499 (Thread-1): Got an exception: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'dbt'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 204, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 74, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 781, in execute
+    Error.errorhandler_wrapper(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 269, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 324, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 203, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 1 at position 0 unexpected 'dbt'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 361, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 314, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 403, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 225, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 127, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 431, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 83, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 221, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 1 at position 0 unexpected 'dbt'.
+2021-12-16 09:11:07.832606 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'dbt'.", 'raw_sql': 'dbt docs generate\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'dbt docs generate\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/task/sql_commands.py", line 147, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 377, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt_rpc/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt_rpc.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 1 at position 0 unexpected 'dbt'.", 'raw_sql': 'dbt docs generate\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'dbt docs generate\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-12-16 09:11:08.752328 (Thread-23): handling poll request
+2021-12-16 09:11:08.752724 (Thread-23): 09:11:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c52bee0>]}
+2021-12-16 09:11:08.753510 (Thread-23): sending response (<Response 9950 bytes [200 OK]>) to 10.0.11.17
+2021-12-16 09:11:25.757678 (Thread-24): handling status request
+2021-12-16 09:11:25.759439 (Thread-24): 09:11:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4f0880>]}
+2021-12-16 09:11:25.760404 (Thread-24): sending response (<Response 15565 bytes [200 OK]>) to 10.0.44.37
+2021-12-16 09:11:26.154007 (Thread-25): handling status request
+2021-12-16 09:11:26.154331 (Thread-25): 09:11:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4f0b80>]}
+2021-12-16 09:11:26.155202 (Thread-25): sending response (<Response 15565 bytes [200 OK]>) to 10.0.34.87
+2021-12-16 09:11:26.341207 (Thread-26): handling docs.generate request
+2021-12-16 09:11:26.341526 (Thread-26): 09:11:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c4f0df0>]}
+2021-12-16 09:11:28.509849 (Thread-26): sending response (<Response 138 bytes [200 OK]>) to 10.0.26.68
+2021-12-16 09:11:28.531053 (MainThread): 09:11:28  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '128c1869-84d9-4518-be7b-9bf295873f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f881b8e0c70>]}
+2021-12-16 09:11:28.531378 (MainThread): 09:11:28  Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+2021-12-16 09:11:28.532853 (MainThread): 09:11:28  
+2021-12-16 09:11:28.533047 (MainThread): 09:11:28  Acquiring new snowflake connection "master"
+2021-12-16 09:11:28.533800 (ThreadPoolExecutor-0_0): 09:11:28  Acquiring new snowflake connection "list_INTERVIEW_DB_PLAYGROUND_UDIPTAMAN_DAS"
+2021-12-16 09:11:28.547487 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/catalog.sql
+2021-12-16 09:11:28.550826 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/adapters.sql
+2021-12-16 09:11:28.588849 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/merge.sql
+2021-12-16 09:11:28.592866 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/table.sql
+2021-12-16 09:11:28.596194 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/seed.sql
+2021-12-16 09:11:28.601353 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/view.sql
+2021-12-16 09:11:28.602779 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/snapshot.sql
+2021-12-16 09:11:28.603868 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/incremental.sql
+2021-12-16 09:11:28.613442 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/get_custom_name/get_custom_alias.sql
+2021-12-16 09:11:28.615069 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/get_custom_name/get_custom_database.sql
+2021-12-16 09:11:28.616730 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/get_custom_name/get_custom_schema.sql
+2021-12-16 09:11:28.619247 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/generic_test_sql/accepted_values.sql
+2021-12-16 09:11:28.620695 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/generic_test_sql/not_null.sql
+2021-12-16 09:11:28.621370 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/generic_test_sql/relationships.sql
+2021-12-16 09:11:28.622325 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/generic_test_sql/unique.sql
+2021-12-16 09:11:28.623158 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/configs.sql
+2021-12-16 09:11:28.625495 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/hooks.sql
+2021-12-16 09:11:28.629536 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/snapshots/strategies.sql
+2021-12-16 09:11:28.645904 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2021-12-16 09:11:28.647736 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/snapshots/snapshot.sql
+2021-12-16 09:11:28.658913 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/snapshots/helpers.sql
+2021-12-16 09:11:28.669985 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/seeds/seed.sql
+2021-12-16 09:11:28.675834 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/seeds/helpers.sql
+2021-12-16 09:11:28.691523 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/view/create_view_as.sql
+2021-12-16 09:11:28.693933 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/view/view.sql
+2021-12-16 09:11:28.701118 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2021-12-16 09:11:28.703822 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/view/helpers.sql
+2021-12-16 09:11:28.705241 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/table/table.sql
+2021-12-16 09:11:28.712308 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/table/create_table_as.sql
+2021-12-16 09:11:28.715234 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/incremental/merge.sql
+2021-12-16 09:11:28.726242 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2021-12-16 09:11:28.741277 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/incremental/column_helpers.sql
+2021-12-16 09:11:28.745772 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/incremental/incremental.sql
+2021-12-16 09:11:28.755518 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/models/incremental/is_incremental.sql
+2021-12-16 09:11:28.757199 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/tests/test.sql
+2021-12-16 09:11:28.761578 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/tests/where_subquery.sql
+2021-12-16 09:11:28.763490 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/materializations/tests/helpers.sql
+2021-12-16 09:11:28.765325 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/etc/statement.sql
+2021-12-16 09:11:28.769766 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/etc/datetime.sql
+2021-12-16 09:11:28.777900 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/adapters/indexes.sql
+2021-12-16 09:11:28.780668 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/adapters/persist_docs.sql
+2021-12-16 09:11:28.785143 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/adapters/freshness.sql
+2021-12-16 09:11:28.788246 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/adapters/relation.sql
+2021-12-16 09:11:28.797786 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/adapters/metadata.sql
+2021-12-16 09:11:28.804828 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/adapters/columns.sql
+2021-12-16 09:11:28.814422 (ThreadPoolExecutor-0_0): 09:11:28  Parsing macros/adapters/schema.sql
+2021-12-16 09:11:28.828613 (ThreadPoolExecutor-0_0): 09:11:28  Using snowflake connection "list_INTERVIEW_DB_PLAYGROUND_UDIPTAMAN_DAS"
+2021-12-16 09:11:28.828748 (ThreadPoolExecutor-0_0): 09:11:28  On list_INTERVIEW_DB_PLAYGROUND_UDIPTAMAN_DAS: show terse objects in INTERVIEW_DB.PLAYGROUND_UDIPTAMAN_DAS
+2021-12-16 09:11:28.828834 (ThreadPoolExecutor-0_0): 09:11:28  Opening a new connection, currently in state init
+2021-12-16 09:11:29.082377 (Thread-27): handling poll request
+2021-12-16 09:11:29.082769 (Thread-27): 09:11:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c509250>]}
+2021-12-16 09:11:29.085181 (Thread-27): sending response (<Response 16938 bytes [200 OK]>) to 10.0.9.255
+2021-12-16 09:11:29.326281 (ThreadPoolExecutor-0_0): 09:11:29  SQL status: SUCCESS 0 in 0.5 seconds
+2021-12-16 09:11:29.328110 (ThreadPoolExecutor-0_0): 09:11:29  On list_INTERVIEW_DB_PLAYGROUND_UDIPTAMAN_DAS: Close
+2021-12-16 09:11:29.426357 (MainThread): 09:11:29  Concurrency: 4 threads (target='default')
+2021-12-16 09:11:29.426541 (MainThread): 09:11:29  
+2021-12-16 09:11:29.429337 (Thread-2): 09:11:29  Began running node model.my_new_project.my_first_dbt_model
+2021-12-16 09:11:29.429570 (Thread-2): 09:11:29  Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model"
+2021-12-16 09:11:29.429668 (Thread-2): 09:11:29  Began compiling node model.my_new_project.my_first_dbt_model
+2021-12-16 09:11:29.429796 (Thread-2): 09:11:29  Compiling model.my_new_project.my_first_dbt_model
+2021-12-16 09:11:29.433468 (Thread-2): 09:11:29  Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-12-16 09:11:29.463968 (Thread-2): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.464181 (Thread-2): 09:11:29  Began executing node model.my_new_project.my_first_dbt_model
+2021-12-16 09:11:29.464299 (Thread-2): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.464469 (Thread-2): 09:11:29  Finished running node model.my_new_project.my_first_dbt_model
+2021-12-16 09:11:29.465526 (Thread-4): 09:11:29  Began running node model.my_new_project.my_second_dbt_model
+2021-12-16 09:11:29.465747 (Thread-4): 09:11:29  Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model"
+2021-12-16 09:11:29.465835 (Thread-4): 09:11:29  Began compiling node model.my_new_project.my_second_dbt_model
+2021-12-16 09:11:29.465921 (Thread-4): 09:11:29  Compiling model.my_new_project.my_second_dbt_model
+2021-12-16 09:11:29.468404 (Thread-4): 09:11:29  Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2021-12-16 09:11:29.468639 (Thread-5): 09:11:29  Began running node test.my_new_project.not_null_my_first_dbt_model_id.5fb22c2710
+2021-12-16 09:11:29.468819 (Thread-5): 09:11:29  Acquiring new snowflake connection "test.my_new_project.not_null_my_first_dbt_model_id.5fb22c2710"
+2021-12-16 09:11:29.468900 (Thread-5): 09:11:29  Began compiling node test.my_new_project.not_null_my_first_dbt_model_id.5fb22c2710
+2021-12-16 09:11:29.468980 (Thread-5): 09:11:29  Compiling test.my_new_project.not_null_my_first_dbt_model_id.5fb22c2710
+2021-12-16 09:11:29.473854 (Thread-3): 09:11:29  Began running node test.my_new_project.unique_my_first_dbt_model_id.16e066b321
+2021-12-16 09:11:29.474036 (Thread-3): 09:11:29  Acquiring new snowflake connection "test.my_new_project.unique_my_first_dbt_model_id.16e066b321"
+2021-12-16 09:11:29.474118 (Thread-3): 09:11:29  Began compiling node test.my_new_project.unique_my_first_dbt_model_id.16e066b321
+2021-12-16 09:11:29.474196 (Thread-3): 09:11:29  Compiling test.my_new_project.unique_my_first_dbt_model_id.16e066b321
+2021-12-16 09:11:29.483546 (Thread-5): 09:11:29  Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id.5fb22c2710"
+2021-12-16 09:11:29.486966 (Thread-3): 09:11:29  Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id.16e066b321"
+2021-12-16 09:11:29.495637 (Thread-4): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.495796 (Thread-4): 09:11:29  Began executing node model.my_new_project.my_second_dbt_model
+2021-12-16 09:11:29.495893 (Thread-4): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.496041 (Thread-4): 09:11:29  Finished running node model.my_new_project.my_second_dbt_model
+2021-12-16 09:11:29.496805 (Thread-2): 09:11:29  Began running node test.my_new_project.not_null_my_second_dbt_model_id.151b76d778
+2021-12-16 09:11:29.496980 (Thread-2): 09:11:29  Acquiring new snowflake connection "test.my_new_project.not_null_my_second_dbt_model_id.151b76d778"
+2021-12-16 09:11:29.497066 (Thread-2): 09:11:29  Began compiling node test.my_new_project.not_null_my_second_dbt_model_id.151b76d778
+2021-12-16 09:11:29.497148 (Thread-2): 09:11:29  Compiling test.my_new_project.not_null_my_second_dbt_model_id.151b76d778
+2021-12-16 09:11:29.500289 (Thread-2): 09:11:29  Writing injected SQL for node "test.my_new_project.not_null_my_second_dbt_model_id.151b76d778"
+2021-12-16 09:11:29.500531 (Thread-4): 09:11:29  Began running node test.my_new_project.unique_my_second_dbt_model_id.57a0f8c493
+2021-12-16 09:11:29.500683 (Thread-4): 09:11:29  Acquiring new snowflake connection "test.my_new_project.unique_my_second_dbt_model_id.57a0f8c493"
+2021-12-16 09:11:29.500764 (Thread-4): 09:11:29  Began compiling node test.my_new_project.unique_my_second_dbt_model_id.57a0f8c493
+2021-12-16 09:11:29.500841 (Thread-4): 09:11:29  Compiling test.my_new_project.unique_my_second_dbt_model_id.57a0f8c493
+2021-12-16 09:11:29.503798 (Thread-4): 09:11:29  Writing injected SQL for node "test.my_new_project.unique_my_second_dbt_model_id.57a0f8c493"
+2021-12-16 09:11:29.508299 (Thread-5): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.508446 (Thread-5): 09:11:29  Began executing node test.my_new_project.not_null_my_first_dbt_model_id.5fb22c2710
+2021-12-16 09:11:29.508541 (Thread-5): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.508680 (Thread-5): 09:11:29  Finished running node test.my_new_project.not_null_my_first_dbt_model_id.5fb22c2710
+2021-12-16 09:11:29.509561 (Thread-3): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.509703 (Thread-3): 09:11:29  Began executing node test.my_new_project.unique_my_first_dbt_model_id.16e066b321
+2021-12-16 09:11:29.509794 (Thread-3): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.509923 (Thread-3): 09:11:29  Finished running node test.my_new_project.unique_my_first_dbt_model_id.16e066b321
+2021-12-16 09:11:29.515688 (Thread-2): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.515835 (Thread-2): 09:11:29  Began executing node test.my_new_project.not_null_my_second_dbt_model_id.151b76d778
+2021-12-16 09:11:29.515926 (Thread-2): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.516055 (Thread-2): 09:11:29  Finished running node test.my_new_project.not_null_my_second_dbt_model_id.151b76d778
+2021-12-16 09:11:29.517315 (Thread-4): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.517448 (Thread-4): 09:11:29  Began executing node test.my_new_project.unique_my_second_dbt_model_id.57a0f8c493
+2021-12-16 09:11:29.517537 (Thread-4): 09:11:29  finished collecting timing info
+2021-12-16 09:11:29.517659 (Thread-4): 09:11:29  Finished running node test.my_new_project.unique_my_second_dbt_model_id.57a0f8c493
+2021-12-16 09:11:29.518767 (MainThread): 09:11:29  Connection 'master' was properly closed.
+2021-12-16 09:11:29.518911 (MainThread): 09:11:29  Connection 'test.my_new_project.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+2021-12-16 09:11:29.518981 (MainThread): 09:11:29  Connection 'test.my_new_project.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+2021-12-16 09:11:29.519045 (MainThread): 09:11:29  Connection 'test.my_new_project.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+2021-12-16 09:11:29.519106 (MainThread): 09:11:29  Connection 'test.my_new_project.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+2021-12-16 09:11:29.559308 (MainThread): 09:11:29  Done.
+2021-12-16 09:11:29.598594 (MainThread): 09:11:29  Acquiring new snowflake connection "generate_catalog"
+2021-12-16 09:11:29.598733 (MainThread): 09:11:29  Building catalog
+2021-12-16 09:11:29.599520 (ThreadPoolExecutor-2_0): 09:11:29  Acquiring new snowflake connection "INTERVIEW_DB.information_schema"
+2021-12-16 09:11:29.606294 (ThreadPoolExecutor-2_0): 09:11:29  Using snowflake connection "INTERVIEW_DB.information_schema"
+2021-12-16 09:11:29.606404 (ThreadPoolExecutor-2_0): 09:11:29  On INTERVIEW_DB.information_schema: with tables as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+              table_type as "table_type",
+              comment as "table_comment",
+
+              -- note: this is the _role_ that owns the table
+              table_owner as "table_owner",
+
+              'Clustering Key' as "stats:clustering_key:label",
+              clustering_key as "stats:clustering_key:value",
+              'The key used to cluster this table' as "stats:clustering_key:description",
+              (clustering_key is not null) as "stats:clustering_key:include",
+
+              'Row Count' as "stats:row_count:label",
+              row_count as "stats:row_count:value",
+              'An approximate count of rows in this table' as "stats:row_count:description",
+              (row_count is not null) as "stats:row_count:include",
+
+              'Approximate Size' as "stats:bytes:label",
+              bytes as "stats:bytes:value",
+              'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+              (bytes is not null) as "stats:bytes:include",
+
+              'Last Modified' as "stats:last_modified:label",
+              to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+              'The timestamp for last update/change' as "stats:last_modified:description",
+              (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+
+          from INTERVIEW_DB.INFORMATION_SCHEMA.tables
+
+      ),
+
+      columns as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+
+              column_name as "column_name",
+              ordinal_position as "column_index",
+              data_type as "column_type",
+              comment as "column_comment"
+
+          from INTERVIEW_DB.INFORMATION_SCHEMA.columns
+      )
+
+      select *
+      from tables
+      join columns using ("table_database", "table_schema", "table_name")
+      where (upper("table_schema") = upper('playground_udiptaman_das'))
+      order by "column_index"
+2021-12-16 09:11:29.606496 (ThreadPoolExecutor-2_0): 09:11:29  Opening a new connection, currently in state init
+2021-12-16 09:11:30.670440 (Thread-28): handling poll request
+2021-12-16 09:11:30.670773 (Thread-28): 09:11:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c5c1af0>]}
+2021-12-16 09:11:30.672005 (Thread-28): sending response (<Response 32502 bytes [200 OK]>) to 10.0.11.4
+2021-12-16 09:11:32.240175 (ThreadPoolExecutor-2_0): 09:11:32  SQL status: SUCCESS 0 in 2.63 seconds
+2021-12-16 09:11:32.242247 (ThreadPoolExecutor-2_0): 09:11:32  On INTERVIEW_DB.information_schema: Close
+2021-12-16 09:11:32.387212 (MainThread): 09:11:32  Catalog written to /usr/src/develop/user-50243/environment-55405/repository-44793/target/catalog.json
+2021-12-16 09:11:32.858295 (Thread-29): handling poll request
+2021-12-16 09:11:32.858631 (Thread-29): 09:11:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c530430>]}
+2021-12-16 09:11:32.859245 (Thread-29): sending response (<Response 1344 bytes [200 OK]>) to 10.0.42.98
+2021-12-16 09:11:33.829918 (Thread-30): handling status request
+2021-12-16 09:11:33.830271 (Thread-30): 09:11:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c582910>]}
+2021-12-16 09:11:33.831157 (Thread-30): sending response (<Response 15565 bytes [200 OK]>) to 10.0.26.68
+2021-12-16 09:11:33.873631 (Thread-31): handling status request
+2021-12-16 09:11:33.873959 (Thread-31): 09:11:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c582e80>]}
+2021-12-16 09:11:33.874752 (Thread-31): sending response (<Response 15565 bytes [200 OK]>) to 10.0.18.143
+2021-12-16 09:11:34.125442 (Thread-32): handling status request
+2021-12-16 09:11:34.125772 (Thread-32): 09:11:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c5b35e0>]}
+2021-12-16 09:11:34.126621 (Thread-32): sending response (<Response 15565 bytes [200 OK]>) to 10.0.34.87
+2021-12-16 09:12:29.010323 (Thread-33): handling status request
+2021-12-16 09:12:29.012474 (Thread-33): 09:12:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e53426c5-ea11-49c8-8adb-597e40c5ffeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f491c5b38b0>]}
+2021-12-16 09:12:29.013272 (Thread-33): sending response (<Response 15565 bytes [200 OK]>) to 10.0.18.143
